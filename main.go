@@ -19,6 +19,7 @@ func main() {
 	router.StaticFS("/html", http.Dir("./web/html/"))
 	router.StaticFS("/css", http.Dir("./web/css/"))
 	router.StaticFS("/js", http.Dir("./web/js/"))
+	router.Run()
 }
 
 func ping(context *gin.Context) {
